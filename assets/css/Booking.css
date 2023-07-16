@@ -1,0 +1,36 @@
+.contact-container {
+    min-height: 100vh;
+    color: #fe024a;
+    font-family: "Archivo Black", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-link > a {
+    text-decoration: none;
+    color: #fe024a;
+    text-shadow: 2px 2px 0px rgba(128, 0, 0, 1);
+}
+
+.booking-link {
+    margin: 15px 0;
+    transition: filter 0.3s ease;
+}
+
+.booking-link:hover {
+    filter: blur(3px);
+}
+
+.wp-post-image {
+    position: fixed;
+    z-index: -99;
+    filter: blur(10px);
+}
+
+@media (max-width: 738px) {
+    .contact-container {
+        text-align: center;
+    }
+}

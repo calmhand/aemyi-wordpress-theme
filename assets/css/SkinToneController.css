@@ -1,0 +1,56 @@
+/* Hex Colors
+1 fef6ee
+2 ffe6da
+3 f4d5b8
+4 c28567
+5 602e17
+6 352408
+*/
+
+.skin-tone-controls {
+    position: fixed;
+    top: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    width: min-content;
+    margin: 10px 0;
+}
+
+.skin-tone-controls > button {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+#skintone-one {
+    background-color: #fef6ee;
+}
+
+#skintone-two {
+    background-color: #ffe6da;
+}
+
+#skintone-three {
+    background-color: #f4d5b8;
+}
+
+#skintone-four {
+    background-color: #c28567;
+}
+
+#skintone-five {
+    background-color: #602e17;
+}
+
+#skintone-six {
+    background-color: #352408;
+}

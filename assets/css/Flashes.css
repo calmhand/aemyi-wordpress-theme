@@ -1,0 +1,44 @@
+.flashes-container {
+    min-height: 100vh;
+    font-family: 'Archivo Black', sans-serif;
+    color: #fe024a;
+    background-color: #c28567;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 1s ease;
+}
+
+.flash-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.post-link {
+    transition: all 0.3s ease;
+}
+
+.post-link:hover > img {
+    cursor: pointer!important;
+}
+
+.controller-note {
+    width: 50%; 
+    text-align: center; 
+    position: fixed; 
+    top: 92%; 
+    font-size: 12px; 
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 5px;
+}
+
+@media (max-width: 738px) {
+    .controller-note {
+        width: 80%;
+    }
+}

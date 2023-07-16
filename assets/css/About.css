@@ -1,0 +1,38 @@
+.about-container {
+    font-family: "Archivo Black", sans-serif;
+    min-height: 100vh;
+    background-size: cover;
+    color: #fe024a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+*::selection {
+    color: white;
+    background: #e71d1e;
+}
+
+a {
+    all: unset;
+}
+
+.about-title {
+    color: #fe024a;
+    text-shadow: 2px 2px 0px #660003;
+    animation: glitch1 2s infinite;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.about-content a:hover {
+    text-decoration: underline;
+}

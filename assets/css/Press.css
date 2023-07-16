@@ -1,0 +1,24 @@
+.press-container {
+    min-height: 100vh;
+    font-family: 'Archivo Black', sans-serif;
+    color: #fe024a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.press-item {
+    all: unset;
+    font-size: 32px;
+    padding: 25px 0;
+    transition: color ease 0.2s;
+}
+
+.press-item:hover {
+    color: #ffffff;
+}
+
+.divider {
+    width: 50%;
+    border-bottom: #fe024a dotted 5px;
+}

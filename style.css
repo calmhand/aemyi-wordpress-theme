@@ -1,0 +1,257 @@
+/* 
+Theme Name: Aemyi
+Text Domain: Aemyi-Caroline
+Version: 1.0
+Description: Primary site theme.
+Author: calmhand aka Johnny Goulbourne
+Author URI: https://calmhand.github.io/portfolio/
+*/
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@700&display=swap');
+
+.bg-video > video {
+    min-height: 100vh;
+    width: 100%;
+    z-index: -100;
+    position: fixed;
+    object-fit: cover;
+}
+
+body {
+    background-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* > a:hover {
+    cursor: pointer!important;
+}
+
+.posts-container {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.post-link {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;
+
+}
+
+.post-title {
+    font-family: 'Archivo Black', sans-serif;
+    color: #fe024a;
+    text-shadow: 5px 5px 0px #660003;
+    animation: glitch1 2s infinite;
+}
+
+.post-content {
+    font-family: "Saira", sans-serif;
+}
+
+#post-image {
+    width: 40%;
+    height: auto;
+}
+
+
+/* NAV STYLES */
+.link-style {
+    all: unset;
+    font-family: 'Archivo Black', sans-serif;
+    cursor: pointer;
+    font-size: 1.37rem;
+    color: #fe024a;
+    opacity: 1;
+    transition: all 0.2s ease;
+}
+
+.link-style:hover {
+    filter: blur(3px);
+}
+
+.link-style::selection {
+    color: white;
+    background: #e71d1e;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 738px) {
+    .posts-container {
+        text-align: center;
+    }
+
+    .post-link {
+        padding: 20px 5px;
+    }
+
+    #post-image {
+        width: 100%;
+    }
+}
+
+#top-left {
+    position: fixed;
+    left: 10px;
+}
+
+#top {
+    position: fixed;
+    left: 50%;
+    width: 200px;
+    text-align: center;
+    margin: 0 0 0 -100px;
+}
+
+#top-right {
+    position:fixed;
+    right: 10px;
+}
+
+#middle-left {
+    position: fixed;
+    left: -55px;
+    top: 50%;
+    rotate: 90deg;
+}
+
+#middle-right {
+    position: fixed;
+    right: -25px;
+    top: 50%;
+    rotate: -90deg;
+}
+
+#bottom-right {
+    position:fixed;
+    right: 10px;
+    bottom: 0;
+}
+
+#bottom-left {
+    position: fixed;
+    left: 10px;
+    bottom: 0;
+}
+
+#bottom-link {
+    position: fixed;
+    left: 50%;
+    bottom: 0px;
+    width: 200px;
+    text-align: center;
+    margin: 0 0 0 -100px;
+}
+
+#bottom-right-bundle {
+    position: fixed;
+    right: 10px;
+    bottom: 75px;
+    text-align: right;
+}
+
+/* ANIMATIONS */
+
+@keyframes glitch1 {
+    0% {
+      transform: none;
+      opacity: 1;
+      filter: blur(0px);
+    }
+    7% {
+      transform: skew(-0.5deg, -0.9deg);
+      opacity: 0.75;
+      filter: blur(0px);
+    }
+    10% {
+      transform: none;
+      opacity: 1;
+      filter: blur(0px);
+    }
+    27% {
+      transform: none;
+      opacity: 1;
+      filter: blur(0px);
+    }
+    30% {
+      transform: skew(1.8deg, -0.1deg);
+      opacity: 0.75;
+      filter: blur(1px);
+    }
+    35% {
+      transform: none;
+      opacity: 1;
+      filter: blur(0px);
+    }
+    52% {
+      transform: none;
+      opacity: 1;
+      filter: blur(0px);
+    }
+    55% {
+      transform: skew(-1deg, 0.2deg);
+      opacity: 0.75;
+      filter: blur(1px);
+    }
+    50% {
+      transform: none;
+      opacity: 1;
+      filter: blur(0px);
+    }
+    72% {
+      transform: none;
+      opacity: 1;
+      filter: blur(0px);
+    }
+    75% {
+      transform: skew(0.4deg, 1deg);
+      opacity: 0.75;
+      filter: blur(1px);
+    }
+    80% {
+      transform: none;
+      opacity: 1;
+      filter: blur(0px);
+    }
+    100% {
+      transform: none;
+      opacity: 1;
+      filter: blur(0px);
+    }
+  }
+
+/* ... */
+
+/* Cool Reds
+
+#fe024a
+
+#e22663
+
+#680003
+
+#e93e42
+
+#a51615
+
+#ea058b
+
+#fa628b
+
+#f3090f
+*/

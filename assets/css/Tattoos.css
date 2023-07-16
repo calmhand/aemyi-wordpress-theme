@@ -1,0 +1,21 @@
+.tattoos-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-link-title {
+    padding: 10px 0; 
+    color: #fe024a;
+    text-shadow: 2px 2px 0px #660003;
+    font-size: 20px;
+    font-family: "Archivo Black", sans-serif;
+}
+
+@media (max-width: 738px) {
+    .artworks-container {
+        flex-direction: column;
+    }
+}
